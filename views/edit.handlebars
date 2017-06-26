@@ -1,0 +1,27 @@
+<div class = "mainTable">
+<p>Ваши личные прогаммы</p>
+<form action = "/save" method = "post">
+<table class="table">
+  <thead>
+    <tr>
+      <th>№ п/п</th>
+      <th>Название</th>
+      <th>Дата</th>
+      <th>Описание</th>
+	  <th></th>
+	  <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input name = "id" type="hidden" class="form-control" value = '{{id}}' required></td>
+      <td><input name = "title" type="text" class="form-control"  value = '{{title}}' required></td>
+      <td><input name = "date" type="date" class="form-control"  value = '{{date}}' required></td>
+      <td><input name = "description" type="text" class="form-control"  value = '{{description}}' required></td>
+    </tr>
+  </tbody>
+</table>
+<div class="click">
+ <input type="submit" class="btn btn-default btn-lg btn-block" value="Сохранить"></form>
+</div>
+</div>

@@ -1,0 +1,105 @@
+body{
+ background-color: #89aae6;
+ color:#5d5d5d;
+ text-align: center;
+ font-size:16px;}
+h2{
+	text-align: center;
+	margin-bottom: 60px;
+}
+.app_formCreate{
+	margin: 0 auto;
+	width: 400px;
+	text-align: center;
+}
+h4{
+	text-align: center;
+	margin: 30px 30px 30px 30px;
+}
+p{
+}
+hr{
+	border: none;
+	color: #d2c7c7;
+	background-color: #d2c7c7;
+	height: 2px;
+}
+.post{
+text-align: left;
+border: 1px solid #f1c7c7;
+width: 800px;
+margin: 0 auto;}
+.data{
+	text-align: center;}
+h3{
+text-align:center;}	
+.all_news {
+width: 1024px;
+margin: 0 auto;}
+.back-link{
+width: 70px;
+margin: 30px auto;
+}
+.mainTable{
+	width:824px;
+	margin:0 auto;
+	text-align:left;
+}
+.click{
+	width:300px;
+	margin:0 auto;
+}
+
+.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;}
+.input-group { margin-bottom:10px; }
+.separator { border-right: 1px solid #dfdfe0; }
+.facebook,.twitter { min-width:170px; }
+.facebook { background-color:#354E84;color:#fff; }
+.twitter { background-color:#00A5E3;color:#fff; }
+.facebook:hover,.twitter:hover { color:#fff; }
+
+.menu{
+}
+#navbar ul{
+display: none;
+background-color: #f90;
+position: absolute;
+top: 100%;
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#navbar {
+height: 60px;
+background-color: #666;
+padding-left: 25px;
+min-width: 470px;
+}
+#navbar li {
+float: left;
+position: relative;
+height: 100%;
+}
+#navbar li a {
+display: block;
+padding: 15px;
+width: 120px;
+color: #fff;
+text-decoration: none;
+text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #f90; }
+#navbar ul li:hover { background-color: #666; }
+
+.container{
+	position:center;
+}
+.text-left{
+	text-align:left;
+	padding: 20px;
+}

@@ -1,0 +1,36 @@
+
+{{#if username}}
+<p class = "text-left">Вы вошли как, {{username}}</p>
+{{else}}<p class = "text-left">Вы не авторизованы.<a href = "/auth">Авторизоваться</a></p>{{/if}}
+<div class = "mainTable">
+<p>Ваши личные прогаммы</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>№ п/п</th>
+      <th>Название</th>
+      <th>Дата</th>
+      <th>Описание</th>
+	  <th></th>
+	  <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#if allProgr}}
+	{{#each allProgr}}
+    <tr>
+      <td>{{inc @index}}</td>
+      <td>{{title}}</td>
+      <td>{{date}}</td>
+      <td>{{description}}</td>
+	  <td><a href = "/edit/{{id}}" class="btn btn-primary">Изменить</a</td>
+	  <td><a href = "/delete/{{id}}" class="btn btn-danger">Удалить</a></td>
+    </tr>
+	{{/each}}
+	{{/if}}
+  </tbody>
+</table>
+<div class="click">
+<a href = "/add" class="btn btn-default btn-lg btn-block">Добавить программу</a>
+</div>
+</div>

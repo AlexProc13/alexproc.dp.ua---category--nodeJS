@@ -1,0 +1,67 @@
+{{#if user_name}}
+<p>Вы вошли как {{user_name}}. Вам не нужно авторизироваться</p>
+<p></p>
+{{else}}
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-lg-6">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">
+Авторизация на сайте</h3>
+</div>
+<div class="panel-body">
+<div class="row">
+<div class="col-xs-6 col-sm-6 col-md-6 separator social-login-box"> <br />
+<a href="#" class="btn facebook btn-block" role="button">Войти с помощью Facebook</a>
+<br />
+<a href="#" class="btn twitter btn-block" role="button">Войти с помощью Twitter</a>
+</div>
+<div class="col-xs-6 col-sm-6 col-md-6 login-box">
+<form id = "form" action="/auth" method="post">
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+<input id = "user_name" name = "user_name"type="text" class="form-control" placeholder="Имя пользователя" required autofocus />
+</div>
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+<input id="user_pass" name = "user_pass" type="password" class="form-control" placeholder="Ваш пароль" required />
+</div>
+<p>
+<a href="#">Забыли свой пароль?</a></p>
+У вас нет аккаунта? <a href="#">Регистрация</a>
+
+</div>
+</div>
+</div>
+<div class="panel-footer">
+<div class="row">
+<div class="col-xs-6 col-sm-6 col-md-6">
+<div class="checkbox">
+<label>
+<input name = "remember" type="checkbox" value="Remember">
+Запомнить меня
+</label>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6 col-md-6">
+<button id = "login" type="submit" class="btn btn-labeled btn-success">
+<span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Войти</button>
+<a href="/logout" class="btn btn-labeled btn-danger">
+<span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Выход</a></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{{/if}}
+{{#if user_name}}
+<p><a href="/logout" class="btn btn-labeled btn-danger">
+<span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Выход</a></p>
+{{/if}}
+<!--<form action ="/auth1" method="post">
+<input name = "names" type = "text">
+<input id = "login2" type = "submit">
+</form>-->

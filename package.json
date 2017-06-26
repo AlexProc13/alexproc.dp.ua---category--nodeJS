@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "express": "*",
+    "express-handlebars": "*",
+	"body-parser": "*",
+    "request": "*",
+	"mysql": "*",
+	"cookies":"*",
+	"cookie-parser":"*",
+	"cookie-sessions":"*"
+  }
+}
